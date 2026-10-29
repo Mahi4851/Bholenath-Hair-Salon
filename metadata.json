@@ -1,0 +1,8 @@
+{
+  "name": "Bholenath A.C. Hair Art - Surat",
+  "description": "सुरत, गुजरातमधील प्रख्यात मेन्स पार्लर आणि हेअर सलून - प्रो. प्रविण वि. जगताप. हेअर कटिंग, दाढी स्टाईलिंग, फेशियल आणि प्रीमियम ग्रूमिंग सेवा.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

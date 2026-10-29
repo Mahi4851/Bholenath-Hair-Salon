@@ -1,0 +1,29 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Noto Sans Devanagari', 'Plus Jakarta Sans', system-ui, sans-serif;
+    background-color: #FAF9F6;
+    color: #1C1917;
+  }
+}
+
+.font-heading {
+  font-family: 'Outfit', 'Noto Sans Devanagari', sans-serif;
+}
+
+/* Crisp luxury light scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #f5f3ef;
+}
+::-webkit-scrollbar-thumb {
+  background: #d6d3cd;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #b8b2a8;
+}
