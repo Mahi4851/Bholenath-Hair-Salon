@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Phone, Calendar, Menu, X, Scissors, MapPin, Download } from 'lucide-react';
+import { Phone, Calendar, Menu, X, Scissors, MapPin } from 'lucide-react';
 import { SALON_INFO } from '../data/salonData';
 import { Language, AppPage } from '../types';
 
@@ -99,16 +99,6 @@ export const Navbar: React.FC<NavbarProps> = ({
             >
               <Phone className="w-3.5 h-3.5" />
               <span>{SALON_INFO.owner.displayPhone}</span>
-            </a>
-            <span className="text-stone-300">·</span>
-            <a
-              href="/bholenath-hair-art.zip"
-              download="bholenath-hair-art-surat.zip"
-              className="flex items-center gap-1.5 text-[11px] font-bold text-stone-800 hover:text-amber-900 bg-white border border-stone-300 hover:border-amber-400 rounded px-2.5 py-0.5 shadow-2xs transition-colors"
-              title="Download Complete Project ZIP"
-            >
-              <Download className="w-3.5 h-3.5 text-amber-700" />
-              <span>Download ZIP</span>
             </a>
             <span className="text-stone-300">·</span>
             {/* Language Switcher */}

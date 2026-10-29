@@ -1,5 +1,5 @@
 import React from 'react';
-import { Scissors, Phone, MessageSquare, MapPin, Navigation, Download } from 'lucide-react';
+import { Scissors, Phone, MessageSquare, MapPin, Navigation } from 'lucide-react';
 import { SALON_INFO } from '../data/salonData';
 import { Language, AppPage } from '../types';
 
@@ -151,21 +151,11 @@ export const Footer: React.FC<FooterProps> = ({ currentLang, onPageChange, onOpe
 
         </div>
 
-        {/* Download & Copyright Row */}
+        {/* Copyright Row */}
         <div className="pt-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-[11px] text-stone-500">
           <div>
             © {new Date().getFullYear()} भोलेनाथ A.C. हेअर आर्ट (Bholenath Hair Art). सर्व हक्क सुरक्षित.
             <div className="text-stone-400 mt-0.5">संतोषी नगर, शांति नगर गेट, लिंबायत - गोडादरा रोड, सुरत, गुजरात</div>
-          </div>
-          <div className="flex items-center gap-3">
-            <a
-              href="/bholenath-hair-art.zip"
-              download="bholenath-hair-art-surat.zip"
-              className="inline-flex items-center gap-2 px-3.5 py-2 rounded-lg bg-white hover:bg-stone-50 border border-stone-300 text-stone-800 font-bold text-xs shadow-2xs transition-colors"
-            >
-              <Download className="w-4 h-4 text-amber-700" />
-              <span>वेबसाइट कोड ZIP डाउनलोड करा (Download ZIP)</span>
-            </a>
           </div>
         </div>
 
