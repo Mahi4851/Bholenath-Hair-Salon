@@ -1,6 +1,8 @@
 import React, { useState, useMemo } from 'react';
 import { Search, Clock, Plus, Check, Calendar, Sparkles, Scissors } from 'lucide-react';
 import { SALON_SERVICES } from '../data/salonData';
+import beardGroomingImage from '../assets/images/barber_beard_grooming_1793292326179.jpg';
+import craftsmanshipImage from '../assets/images/barber_craftsmanship_cut_1793292325928.jpg';
 import { ServiceCategory, Language, SalonService } from '../types';
 
 interface ServicesSectionProps {
@@ -106,10 +108,9 @@ export const ServicesSection: React.FC<ServicesSectionProps> = ({
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
           <div className="relative rounded-2xl overflow-hidden border border-stone-200 bg-white shadow-xs aspect-[16/9] group">
             <img
-              src="/src/assets/images/barber_craftsmanship_cut_1793292325928.jpg"
+              src={craftsmanshipImage}
               alt="प्रीमियम हेअर कटिंग व स्टाईलिंग"
               className="w-full h-full object-cover group-hover:scale-102 transition-transform duration-500"
-              referrerPolicy="no-referrer"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-stone-950/70 via-transparent to-transparent" />
             <div className="absolute bottom-4 left-4 right-4 text-white">
@@ -123,10 +124,9 @@ export const ServicesSection: React.FC<ServicesSectionProps> = ({
 
           <div className="relative rounded-2xl overflow-hidden border border-stone-200 bg-white shadow-xs aspect-[16/9] group">
             <img
-              src="/src/assets/images/barber_beard_grooming_1793292326179.jpg"
+              src={beardGroomingImage}
               alt="रॉयल हॉट टॉवेल शेव व बियर्ड ग्रूमिंग"
               className="w-full h-full object-cover group-hover:scale-102 transition-transform duration-500"
-              referrerPolicy="no-referrer"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-stone-950/70 via-transparent to-transparent" />
             <div className="absolute bottom-4 left-4 right-4 text-white">

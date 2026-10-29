@@ -2,6 +2,7 @@ import React from 'react';
 import { Calendar, MessageSquare, Phone, Snowflake, Award, Sparkles, ShieldCheck, MapPin, Clock, ArrowRight } from 'lucide-react';
 import { SALON_INFO, SALON_HIGHLIGHTS } from '../data/salonData';
 import { Language, AppPage } from '../types';
+import salonInteriorImage from '../assets/images/luxury_salon_interior_1793292325245.jpg';
 
 interface HeroSectionProps {
   currentLang: Language;
@@ -140,10 +141,9 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
             <div className="relative rounded-2xl overflow-hidden border border-stone-200 bg-white shadow-xl">
               <div className="relative aspect-[4/3] sm:aspect-[16/10] lg:aspect-[4/3] w-full overflow-hidden bg-stone-100">
                 <img
-                  src="/src/assets/images/luxury_salon_interior_1793292325245.jpg"
+                  src={salonInteriorImage}
                   alt="भोलेनाथ A.C. हेअर आर्ट - लक्झरी सलून वातावरण"
                   className="w-full h-full object-cover object-center"
-                  referrerPolicy="no-referrer"
                 />
 
                 {/* Subtle soft bottom gradient for contrast */}

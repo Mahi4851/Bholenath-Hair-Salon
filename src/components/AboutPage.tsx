@@ -2,6 +2,7 @@ import React from 'react';
 import { Award, ShieldCheck, Heart, Sparkles, Check, Phone, Snowflake, Users, Clock, MapPin, MessageSquare } from 'lucide-react';
 import { SALON_INFO } from '../data/salonData';
 import { Language } from '../types';
+import salonInteriorImage from '../assets/images/luxury_salon_interior_1793292325245.jpg';
 
 interface AboutPageProps {
   currentLang: Language;
@@ -63,10 +64,9 @@ export const AboutPage: React.FC<AboutPageProps> = ({ currentLang, onOpenBooking
           <div className="lg:col-span-5 relative">
             <div className="relative rounded-2xl overflow-hidden border border-stone-200 shadow-md bg-stone-100 aspect-[3/4]">
               <img
-                src="/assets/aistudio/mama_s_salon_b865f924.jpeg"
-                alt="प्रो. प्रविण वि. जगताप - भोलेनाथ A.C. हेअर आर्ट सलून"
+                src={salonInteriorImage}
+                alt="भोलेनाथ A.C. हेअर आर्ट सलूनचा आतील भाग"
                 className="w-full h-full object-cover"
-                referrerPolicy="no-referrer"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-stone-950/80 via-transparent to-transparent" />
 
@@ -176,10 +176,9 @@ export const AboutPage: React.FC<AboutPageProps> = ({ currentLang, onOpenBooking
         <div className="rounded-3xl overflow-hidden border border-stone-200 bg-white shadow-md">
           <div className="relative aspect-[16/8] sm:aspect-[21/9] w-full overflow-hidden">
             <img
-              src="/src/assets/images/luxury_salon_interior_1793292325245.jpg"
+              src={salonInteriorImage}
               alt="भोलेनाथ A.C. हेअर आर्ट सलून वातावरण"
               className="w-full h-full object-cover"
-              referrerPolicy="no-referrer"
             />
             <div className="absolute inset-0 bg-gradient-to-r from-stone-950/80 via-stone-950/40 to-transparent" />
             
